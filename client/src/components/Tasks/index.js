@@ -24,6 +24,8 @@ class Tasks extends Component {
                 <TableHeaderColumn>Image</TableHeaderColumn>
                 <TableHeaderColumn>Desired state</TableHeaderColumn>
                 <TableHeaderColumn>Current state</TableHeaderColumn>
+                <TableHeaderColumn>Node ID</TableHeaderColumn>
+                <TableHeaderColumn>Internal IP</TableHeaderColumn>
                 <TableHeaderColumn>Error</TableHeaderColumn>
               </TableRow>
             </TableHeader>
@@ -34,6 +36,8 @@ class Tasks extends Component {
                   <TableRowColumn>{task.Spec.ContainerSpec.Image}</TableRowColumn>
                   <TableRowColumn>{task.DesiredState}</TableRowColumn>
                   <TableRowColumn>{task.Status.State}</TableRowColumn>
+                  <TableRowColumn>{task.NodeID</TableRowColumn>
+                  <TableRowColumn>{task.NetworksAttachments.Network[0].Addresses}</TableRowColumn>
                   <TableRowColumn>{task.Status.Err}</TableRowColumn>
                 </TableRow>
               ))}
