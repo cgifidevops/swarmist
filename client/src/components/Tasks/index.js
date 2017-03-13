@@ -37,7 +37,7 @@ class Tasks extends Component {
                   <TableRowColumn>{task.DesiredState}</TableRowColumn>
                   <TableRowColumn>{task.Status.State}</TableRowColumn>
                   <TableRowColumn>{task.NodeID}</TableRowColumn>
-                  <TableRowColumn>{task.NetworksAttachments.Network[0].Addresses}</TableRowColumn>
+                  <TableRowColumn>{task.NetworksAttachments[0].Addresses}</TableRowColumn>
                   <TableRowColumn>{task.Status.Err}</TableRowColumn>
                 </TableRow>
               ))}

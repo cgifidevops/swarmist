@@ -32,7 +32,7 @@ const Dashboard = observer(
       return (
         <div>
           <FlatButton
-            label="Create Service"
+            label="DONT Create Service"
             containerElement={<Link to="/services/create" />}
             primary={true}
             style={styles.button}
